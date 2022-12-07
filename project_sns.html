@@ -1,0 +1,423 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <style>
+    body {  	font-family : 'Nanum Gothic';  }
+    </style>
+    <title>포트폴리오</title>
+  </head>
+  <body>
+    <div class="container-fluid  bg-light" style="margin:0px; padding:0px">
+      <div class="justify-content-center">
+        <nav class="navbar navbar-expand-sm fixed-top bg-dark">
+          <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
+          </div>
+          <div class="mx-auto my-2 order-0 order-md-1 position-relative">
+              <a class="mx-auto rounded-circle text-light" href="./index.html">
+                  <i class="fas fa-home fa-2x"></i>
+              </a>
+          </div>
+          <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
+          </div>
+        </nav>
+      </div>
+
+      <div class="container-fluid justify-content-center mt-4">
+        <div class="p-4 mt-2 mb-2 mr-4 ml-4 overflow-auto">
+          <div class="pt-4">
+            <h1 class="font-weight-bold p-2">SNS</h1>
+            <h4>소개</h4>
+            <p class="col-lg-6">
+              <b>스프링 프레임워크를 처음 사용해보며, 웹의 기본 소양인 게시판에 여러 기능이 추가된 SNS를 주제로 선정했습니다.</b>
+              기능은 현존하는 여러 SNS를 참고하여 구현 목표로 정했습니다.
+              처음에 기본적인 구조와 설정 파일 관리조차 미숙했으나, 프로젝트를 통해 동작의 흐름을 이해할 수 있었습니다.
+              또한 mybatis로 DB를 연동해보며 장점을 느낄 수 있었습니다.
+            </p>
+            <h4>구현기능</h4>
+            <p>
+              <ol>
+                <li>
+                  <a href="#content1"><b>회원기능</b></a>
+                  <ul>
+                    <li>회원가입</li>
+                    <li>로그인</li>
+                    <li>아이디 또는 비밀번호 찾기</li>
+                    <li>회원정보 및 비밀번호 변경</li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#content2"><b>게시글 기능</b></a>
+                  <ul>
+                    <li>게시글 작성, 삭제</li>
+                    <li>타임라인</li>
+                    <li>이미지</li>
+                    <li>검색</li>
+                  </ul>
+                </li>
+                <li><a href="#content3"><b>댓글</b></a>
+                  <ul>
+                    <li>댓글 작성 및 삭제</li>
+                    <li>댓글에 대한 답글</li>
+                  </ul>
+                </li>
+
+                <li><a href="#content4"><b>좋아요</b></a></li>
+                <li>
+                  <a href="#content5"><b>프로필/팔로우</b></a>
+                  <ul>
+                    <li>프로필화면</li>
+                    <li>프로필수정</li>
+                    <li>팔로우리스트</li>
+                  </ul>
+                </li>
+                <li><a href="#content6"><b>실시간 알림</b></a>
+                  <ul>
+                    <li>팔로우, 좋아요, 댓글 작성 시 알림 전송</li>
+                    <li>알림 개수 표시</li>
+                  </ul>
+                </li>
+              </ol>
+            </p>
+          </div>
+            <hr class="bg-dark" style="border-width:5px;">
+            <div class="card p-2 m-2">
+              <div class="row no-gutters p-1">
+                <div class="card-body">
+                  <div class="row justify-content-center m-2">
+                    <div class="col-md-6 p-4 border">
+                      <img src="images/sns/2.PNG" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-6 p-4 border">
+                      <img src="images/sns/3.PNG" class="card-img" alt="...">
+                    </div>
+                  </div>
+                  <div class="row justify-content-center m-2">
+                    <div class="col-md-6 p-4 border">
+                      <img src="images/sns/4.PNG" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-6 p-4 border">
+                      <img src="images/sns/5.PNG" class="card-img" alt="...">
+                    </div>
+                  </div>
+                  <br>
+                  <div id="content1"class="content m-2 border">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 p-4">
+                        <img src="images/sns/8.PNG" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-6 p-4">
+                        <ul>
+                          <li class="m-1">유효성 검사
+                            <ul>
+                              <li class="m-1">ajax를 이용하여 입력할 때마다 클라이언트에서 확인</li>
+                              <li class="m-1">validator를 이용하여 서버 측에서 검증</li>
+                              <li class="m-1">아이디는 4~20자로, 영문자와 숫자 구성</li>
+                              <li class="m-1">비밀번호는 8~30자로, 영문자와 숫자 구성</li>
+                              <li class="m-1">입력폼의 필수입력란 공백 체크</li>
+                            </ul>
+                          </li>
+                          <li class="m-1">중복 확인
+                            <ul>
+                              <li class="m-1">DB에 동일한 아이디 존재 여부 확인</li>
+                            </ul>
+                          </li>
+                          <li class="m-1">Spring security의 BCryptPasswordEncoder 이용한 비밀번호 암호화
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content m-2 border">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 p-4">
+                        <img src="images/sns/9.PNG" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-6 p-4">
+                        <ul>
+                          <li class="m-1">로그인
+                            <ul>
+                              <li class="m-1">DB에 저장된 아이디 및 비밀번호 일치 확인</li>
+                              <li class="m-1">일치하지 않으면 alert로 메시지를 띄움</li>
+                              <li class="m-1">일치하면 타임라인(또는 이전 페이지)으로 리다이렉트</li>
+                            </ul>
+                          </li>
+                          <li class="m-1">인터셉터
+                            <ul>
+                              <li class="m-1">비로그인 시 접근 가능한 페이지</li>
+                              <ul class="m-1">
+                                <li class="m-1">회원가입 페이지</li>
+                                <li class="m-1">로그인 페이지</li>
+                                <li class="m-1">프로필 페이지</li>
+                                <li class="m-1">검색 페이지</li>
+                                <li class="m-1">게시글 상세 페이지</li>
+                              </ul>
+                              <li>이 외의 페이지에 접근 시 로그인 페이지로 이동</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content m-2 border">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 p-4">
+                        <img src="images/sns/10.PNG" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-6 p-4">
+                        <img src="images/sns/11.PNG" class="card-img" alt="...">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content m-2 border">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 p-4">
+                        <img src="images/sns/12.PNG" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-6 p-4">
+                        <ul>
+                          <li class="m-1">회원정보 변경</li>
+                          <ul class="m-1">
+                            <li class="m-1">DB에 저장된 정보는 입력폼에 자동 세팅</li>
+                            <li class="m-1">현재 비밀번호가 일치하지 않으면 변경 불가</li>
+                          </ul>
+                          <li class="m-1">비밀번호 변경</li>
+                          <ul class="m-1">
+                            <li class="m-1">비밀번호 변경과 변경할 비밀번호 일치 여부 확인</li>
+                            <li class="m-1">현재 비밀번호가 일치하지 않으면 변경 불가</li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="content2" class="content m-2 border">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 p-4">
+                        <img src="images/sns/14.PNG" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-6 p-4">
+                        <ul>
+                          <li class="m-1">텍스트 입력
+                            <ul>
+                              <li class="m-1">최대 300글자까지 작성 가능</li>
+                              <li class="m-1">textarea에 입력된 글자 수 카운트 보여주기</li>
+                            </ul>
+                          </li>
+                          <li class="m-1">이미지 업로드
+                            <ul>
+                              <li class="m-1">다수의 파일 업로드 선택 가능</li>
+                              <li class="m-1">파일 확장자를 이미지 파일로 제한</li>
+                              <li class="m-1">업로드할 이미지 파일의 미리보기</li>
+                            </ul>
+                          </li>
+                          <li class="m-1">텍스트와 이미지 중 하나만 공백이 아니면 게시글 작성 가능</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content m-2 border">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 p-4">
+                        <img src="images/sns/16.PNG" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-6 p-4">
+                        <ul>
+                          <li class="m-1">게시글 삭제</li>
+                          <ul class="m-1">
+                            <li class="m-1">자신이 작성한 글에만 ▼ 버튼이 보임</li>
+                            <li class="m-1">버튼을 클릭하면 팝업창이 뜸</li>
+                            <li class="m-1">삭제를 클릭하면 다른 팝업창으로 재차 확인</li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content m-2 border">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 p-4">
+                        <img src="images/sns/13.PNG" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-6 p-4">
+                        <img src="images/sns/scroll.gif" class="card-img" alt="...">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content m-2 border">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 p-4">
+                        <img src="images/sns/15.PNG" class="card-img mx-auto" alt="...">
+                      </div>
+                      <div class="col-md-6 p-4">
+                        <li class="m-1">이미지 슬라이드</li>
+                        <ul class="m-1">
+                          <li class="m-1">게시글의 이미지 크기는 동일하게 보여주며, 크기가 클 경우 일부가 잘려서 보임</li>
+                          <li class="m-1">다수의 이미지는 마우스로 클릭하여 슬라이드로 볼 수 있음</li>
+                        </ul>
+                        <li class="m-1">이미지 클릭</li>
+                        <ul class="m-1">
+                          <li class="m-1">브라우저 화면 크기의 팝업창이 뜨며, 가운데에 원본 이미지를 보여줌</li>
+                          <li class="m-1">이미지 좌우에 있는 버튼을 클릭하면 이미지를 넘겨볼 수 있음</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content m-2 border">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 p-4">
+                        <img src="images/sns/19.PNG" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-6 p-4">
+                        <ul>
+                          <li class="m-1">검색</li>
+                          <ul class="m-1">
+                            <li class="m-1">검색할 단어를 입력하면 해당 문자가 포함된 게시글을 보여줌</li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content m-2 border">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 p-4">
+                        <img src="images/sns/17.PNG" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-6 p-4">
+                        <ul>
+                          <li class="m-1">작성된 댓글은 회원 이름, 아이디, 프로필 사진, 댓글 내용, 날짜 정보 포함</li>
+                          <li class="m-1">날짜는 초, 분, 시간, 일 단위로 나타내며, 일주일이 지나면 연월일로 보여줌</li>
+                          <li class="m-1">댓글은 비회원도 볼 수 있으나, 작성은 회원만 가능함</li>
+                          <li class="m-1">댓글에 대한 답글 작성 기능</li>
+                          <li class="m-1">삭제된 댓글은 댓글이 삭제되었다는 내용으로 변경</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="content3" class="content m-2 border">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 p-4">
+                        <img src="images/sns/18.PNG" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-6 p-4">
+                        <ul>
+                          <li class="m-1">좋아요 기능</li>
+                          <ul class="m-1">
+                            <li class="m-1">흰 하트 버튼을 클릭하면 빨간색 하트로 변경</li>
+                            <li class="m-1">동시에 옆에 숫자가 올라감</li>
+                            <li class="m-1">숫자를 클릭하면 좋아요를 클릭한 유저 리스트 팝업창</li>
+                            <li class="m-1">빨간색 하트를 다시 누르면 좋아요가 취소됨</li>
+                          </ul>
+                          <li class="m-1">회원만 가능한 기능으로, 비회원은 인터셉터로 로그인 페이지로 이동</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="content4" class="content m-2 border">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 p-4">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <img src="images/sns/20.PNG" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-12">
+                          <img src="images/sns/21.PNG" class="card-img" alt="...">
+                        </div>
+                      </div>
+                    </div>
+                      <div class="col-md-6 p-4">
+                        <ul>
+                          <li class="m-1">프로필 보기</li>
+                          <ul class="m-1">
+                            <li class="m-1">네비게이션의 프로필 또는 게시글의 회원 이름 클릭 시 이동</li>
+                            <li class="m-1">회원 이름, 아이디, 프로필 이미지, 소개글, 게시글 수, 팔로우 정보, 작성한 게시글 등을 볼 수 있음</li>
+                          </ul>
+                          <li class="m-1">프로필 수정</li>
+                          <ul class="m-1">
+                            <li class="m-1">자신의 프로필 페이지 우측 상단에 있는 버튼을 클릭 시 이동</li>
+                            <li class="m-1">프로필 이미지와 이름, 소개글 수정 가능</li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="content5" class="content m-2 border">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 p-4">
+                        <img src="images/sns/22.PNG" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-6 p-4">
+                        <ul>
+                          <li class="m-1">자신의 해당 계정 팔로우 여부를 버튼 배경색으로 구분</li>
+                          <li class="m-1">팔로우 버튼을 클릭하면 ajax로 팔로잉, 팔로워 수 반영</li>
+                          <li class="m-1">팔로잉은 회원이 팔로우한 계정, 팔로워는 회원을 팔로우한 계정</li>
+                          <li class="m-1">팔로우 리스트</li>
+                          <ul class="m-1">
+                            <li class="m-1">팔로잉 또는 팔로워를 클릭하면 리스트 팝업창 뜸</li>
+                            <li class="m-1">리스트에 이름, 아이디, 프로필 사진과 자신의 해당 계정 팔로우 여부 보여줌</li>
+                            <li class="m-1">리스트 팝업창에도 팔로우 기능 적용</li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="content6" class="content m-2 border">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 p-4">
+                        <img src="images/sns/23.PNG" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-6 p-4">
+                        <ul>
+                          <li class="m-1">실시간 알림 전송
+                            <ul>
+                              <li class="m-1">팔로우, 좋아요, 댓글 기능 이용 시 대상에게 알림 전송</li>
+                              <li class="m-1">네비게이션 알림 옆에 읽지 않은 알림 개수 표시</li>
+                            </ul>
+                          </li>
+                          <li class="m-1">알림 페이지
+                            <ul>
+                              <li class="m-1">읽지 않은 알림과 읽은 알림 구분하여 보여줌</li>
+                              <li class="m-1">팔로우 알림의 경우, 팔로우 여부를 보여줌</li>
+                              <li class="m-1">댓글 알림의 경우, 댓글 내용을 보여줌</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <footer id="contact" class="text-center bg-dark p-4">
+        <p class="card-text text-muted p-3">
+            <a class="rounded-circle m-3 h3 text-light" href="mailto:alkfs7883@gmail.com"><i class="fa fa-envelope"></i></a>
+            <a class="rounded-circle m-3 h3 text-light" href="https://github.com/96mr"><i class="fab fa-github"></i></a>
+            <a class="rounded-circle m-3 h3 text-light" href="https://cookie9606.tistory.com"><i class="fab fa-blogger-b"></i></a>
+        </p>
+        <small class="text-light">copyright 2021 엄미란</small>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+    <style>
+    body {  	font-family : 'Nanum Gothic';  }
+    </style>
+    <title>포트폴리오</title>
+  </head>
+  <body>
+    <div class="container-fluid  bg-light" style="margin:0px; padding:0px">
+      <div class="justify-content-center">
+        <nav class="navbar navbar-expand-sm fixed-top bg-dark">
+          <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
+          </div>
+          <div class="mx-auto my-2 order-0 order-md-1 position-relative">
+              <a class="mx-auto rounded-circle text-light" href="./index.html">
+                  <i class="fas fa-home fa-2x"></i>
+              </a>
+          </div>
+          <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
+          </div>
+        </nav>
+      </div>
+
+      <div class="container-fluid justify-content-center mt-4">
+        <div class="p-4 mt-2 mb-2 mr-4 ml-4 overflow-auto">
+          <div class="pt-4">
+            <h1 class="font-weight-bold p-2">퐁당</h1>
+            <h4>소개</h4>
+              <p class="col-lg-6">
+                학부 졸업작품으로 제작했던 게임 소개와 관련 게시글을 작성할 수 있는 웹 사이트입니다.<br>
+                웹 개발의 기본이라고 생각되는 회원가입, 로그인, 게시판 CRUD를 구현했습니다.<br>
+                프로젝트를 통해 DB를 연동하고 MVC패턴을 이해하며, 웹 개발의 기본 지식을 쌓을 수 있었습니다.<br>
+              </p>
+            <h4>구현기능</h4>
+            <p>
+              <ol>
+                <li>
+                  <b>게시판</b>
+                  <ul>
+                    <li>CRUD 기능</li>
+                    <li>조회수</li>
+                    <li>카테고리 분류 및 페이징 처리</li>
+                  </ul>
+                </li>
+                <li>
+                  <b>회원</b>
+                  <ul>
+                    <li>회원가입</li>
+                    <li>로그인</li>
+                    <li>회원정보조회</li>
+                    <li>작성한 글 보기</li>
+                  </ul>
+                </li>
+              </ol>
+            </p>
+          </div>
+          <hr class="bg-dark"style="border-width:5px;">
+          <div class="card p-2 m-2">
+            <div class="row no-gutters p-1">
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-10 m-1">
+                    <div class="row justify-content-center">
+                      <div class="col-md-8 p-4 border">
+                        <img src="images/pongdang/board.gif" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-4 p-4 border">
+                        <ul>
+                          <li class="m-1">게시글리스트
+                            <ul>
+                              <li class="m-1">카테고리 별 게시글 분류</li>
+                              <li class="m-1">10개씩 10페이지 단위로 페이징처리</li>
+                            </ul>
+                          </li>
+                          <li class="m-1">게시글CRUD
+                            <ul>
+                              <li class="m-1">작성 시 로그인 여부 체크</li>
+                              <li class="m-1">수정, 삭제 시 작성자 일치 확인</li>
+                              <li class="m-1">작성, 수정 시 게시글의 공백 체크</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-10 m-1">
+                    <div class="row justify-content-center">
+                      <div class="col-md-8 p-4 border">
+                        <img src="images/pongdang/join_login.png" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-4 p-4 border">
+                        <ul>
+                          <li class="m-1">
+                            회원가입 시 gmail SMTP를 이용하여 이메일 인증
+                          </li>
+                          <li class="m-1">
+                            SHA256으로 비밀번호 암호화
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-10 m-1">
+                    <div class="row justify-content-center">
+                      <div class="col-md-8 p-4 border">
+                        <img src="images/pongdang/mypage.png" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-4 p-4 border">
+                        <ul>
+                          <li class="m-1">
+                            회원정보 조회 및 비밀번호 변겅
+                          </li>
+                          <li class="m-1">
+                            내가 작성한 글 모아보기
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <footer id="contact" class="text-center bg-dark p-4">
+        <p class="card-text text-muted p-3">
+            <a class="rounded-circle m-3 h3 text-light" href="mailto:alkfs7883@gmail.com"><i class="fa fa-envelope"></i></a>
+            <a class="rounded-circle m-3 h3 text-light" href="https://github.com/96mr"><i class="fab fa-github"></i></a>
+            <a class="rounded-circle m-3 h3 text-light" href="https://cookie9606.tistory.com"><i class="fab fa-blogger-b"></i></a>
+        </p>
+        <small class="text-light">copyright 2021 엄미란</small>
+      </footer>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+    </script>
+  </body>
+</html>

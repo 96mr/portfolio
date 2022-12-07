@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <style>
+    body {  	font-family : 'Nanum Gothic';  }
+    </style>
+    <title>포트폴리오</title>
+  </head>
+  <body>
+    <div class="container-fluid  bg-light" style="margin:0px; padding:0px">
+      <div class="justify-content-center">
+        <nav class="navbar navbar-expand-sm fixed-top bg-dark">
+          <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
+          </div>
+          <div class="mx-auto my-2 order-0 order-md-1 position-relative">
+              <a class="mx-auto rounded-circle text-light" href="./index.html">
+                  <i class="fas fa-home fa-2x"></i>
+              </a>
+          </div>
+          <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
+          </div>
+        </nav>
+      </div>
+
+      <div class="container-fluid justify-content-center mt-4">
+        <div class="p-4 mt-2 mb-2 mr-4 ml-4 overflow-auto">
+          <div class="pt-4">
+            <h1 class="font-weight-bold p-2">가계부</h1>
+            <h4>소개</h4>
+            <p class="col-lg-6">
+              <b>MFC 프로그래밍 과제로 만들었던 가계부 프로그램을 개선하여 웹으로 제작했습니다.</b>
+            </p>
+            <h4>구현기능</h4>
+            <p>
+              <ol>
+                <li>
+                  <a href="#content1"><b>회원가입 및 로그인</b></a>
+                </li>
+                <li>
+                  <a href="#content2"><b>내역 추가</b></a>
+                </li>
+                <li>
+                  <a href="#content3"><b>캘린더</b></a>
+                </li>
+                <li>
+                  <a href="#content4"><b>차트</b></a>
+                </li>
+              </ol>
+            </p>
+          </div>
+            <hr class="bg-dark" style="border-width:5px;">
+            <div class="card p-2 m-2">
+              <div class="row no-gutters p-1">
+                <div class="card-body">
+                  <div id="content1"class="content m-2">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 p-4 border">
+                        <img src="images/accountBookweb/member.png" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-4 p-4 border">
+                        <ul>
+                          <li class="m-1">유효성 검사
+                            <ul>
+                              <li class="m-1">ajax를 이용하여 입력할 때마다 확인 가능</li>
+                              <li class="m-1">hibernate validator로 서버 측에서 검증</li>
+                              <li class="m-1">아이디는 4~20자로, 영문자와 숫자 구성</li>
+                              <li class="m-1">비밀번호는 8~30자로, 영문자와 숫자 구성</li>
+                            </ul>
+                          </li>
+                          <li class="m-1">중복확인
+                            <ul>
+                              <li class="m-1">입력한 아이디가 DB에 존재 여부 확인</li>
+                            </ul>
+                          </li>
+                          <li class="m-1">BCryptPasswordEncoder 이용한 비밀번호 암호화
+                          </li>
+                          <li class="m-1">
+                            특정 페이지에 접근할 때, 인터셉터를 통해 로그인 여부를 확인하여 페이지 이동
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="content2" class="content m-2">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 p-4 border">
+                        <img src="images/accountBookweb/add.png" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-4 p-4 border">
+                        <ul>
+                          <li class="m-1">ajax를 이용하여 지출 또는 수입 라디오 버튼 값에 따라 카테고리 종류(option) 변경</li>
+                          <li class="m-1">유효성 검사
+                            <ul>
+                              <li class="m-1">hibernate를 이용하여 서버 측에서 검증</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="content3" class="content m-2">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 p-4 border">
+                        <img src="images/accountBookweb/calendar.png" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-4 p-4 border">
+                        <ul>
+                          <li class="m-1">fullCalender API 이용</li>
+                          <li class="m-1">ajax를 이용하여 버튼 값에 따라 서버에서 조건에 맞는 데이터를 전달받음</li>
+                          <ul>
+                            <li class="m-1">수입, 지출, 잔액 표시</li>
+                            <li class="m-1">내역은 '카테고리+금액' 형식으로 표시</li>
+                          </ul>
+                          <li class="m-1">달력에 나타난 내역을 클릭 시 해당 내역 삭제</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="content4" class="content m-2">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 p-4 border">
+                        <img src="images/accountBookweb/chart.png" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-4 p-4 border">
+                        <ul>
+                          <li class="m-1">GoogleChart API 이용</li>
+                          <li class="m-1">ajax를 이용하여 버튼 값에 따라 서버에서 조건에 맞는 데이터를 전달받음</li>
+                          <ul>
+                            <li class="m-1">수입, 지출, 잔액 표시</li>
+                            <li class="m-1">카테고리 별 금액의 비중을 차트에 보여줌</li>
+                            <li class="m-1">테이블에 내역의 상세리스트를 보여줌</li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <footer id="contact" class="text-center bg-dark p-4">
+        <p class="card-text text-muted p-3">
+            <a class="rounded-circle m-3 h3 text-light" href="mailto:alkfs7883@gmail.com"><i class="fa fa-envelope"></i></a>
+            <a class="rounded-circle m-3 h3 text-light" href="https://github.com/96mr"><i class="fab fa-github"></i></a>
+            <a class="rounded-circle m-3 h3 text-light" href="https://cookie9606.tistory.com"><i class="fab fa-blogger-b"></i></a>
+        </p>
+        <small class="text-light">copyright 2021 엄미란</small>
+      </footer>
+    </div>
+  </body>
+</html>
