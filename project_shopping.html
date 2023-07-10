@@ -33,15 +33,15 @@
         </nav>
       </div>
 
-      <div class="container-fluid justify-content-center mt-4">
+           <div class="container-fluid justify-content-center mt-4">
         <div class="p-4 mt-2 mb-2 mr-4 ml-4 overflow-auto">
           <div class="pt-4">
             <h1 class="font-weight-bold p-2">쇼핑몰</h1>
             <p class="col-lg-6">
-              <b>쇼핑몰의 회원 관련, 제품 관련, 장바구니, 주문, 리뷰 기능 구현이 목표입니다.</b><br>
-              Spring Framework를 이용할 때 다소 복잡했던 초기 설정을 간편하게 처리해주는
-              Spring Boot의 장점을 느낄 수 있었습니다. 또한 JPA를 사용하기 위해 학습하는 데 시간이 다소 걸리긴 했으나,
-              Mybatis를 사용할 때 직접 작성하던 쿼리를 메서드만으로 구현해볼 수 있었습니다.<br>
+              <b>쇼핑몰의 회원 관련, 제품 관련, 장바구니, 주문, 리뷰 기능 구현을 목표로 진행했습니다.</b><br>
+              이전에 Spring Framework를 이용할 때 다소 복잡했던 초기 설정을 간편하게 처리해주는
+              Spring Boot의 장점을 느낄 수 있었습니다. 또한 Spring JPA를 사용하기 위해 학습하는 데 시간이 다소 걸리긴 했으나,
+              Mybatis를 사용할 때 직접 작성하던 쿼리를 메서드만으로 구현해보며 둘의 차이를 비교해볼 수 있었습니다.<br>
             </p>
             <div class="m-2" >
               <a class="btn btn-outline-dark m-2 font-weight-bold" href="https://cookie9606.tistory.com/115">블로그 링크</a>
@@ -80,10 +80,9 @@
                     <li>주문 조회</li>
                   </ul>
                 </li>
-                <hr>
-                <li><a href="#content5"><b>리뷰(추가예정)</b></a>
+                <li><a href="#content5"><b>리뷰</b></a>
                   <ul>
-                    <li>리뷰 작성/수정/삭제</li>
+                    <li>리뷰 작성</li>
                     <li>리뷰 조회</li>
                   </ul>
                 </li>
@@ -301,6 +300,44 @@
                     </div>
                   </div>
 
+                  <h4>5. 리뷰</h4>
+                  <div id="content5" class="content m-2 border">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 p-4">
+                        <img src="images/shopping/reviewForm.png" class="card-img m-2 p-2" alt="...">
+                      </div>
+                      <div class="col-md-6 p-4">
+                        <ul>
+                          <li class="m-1">리뷰 작성</li>
+                          <ul class="m-1">
+                            <li class="m-1">회원만 작성 가능</li>
+                            <li class="m-1">제품을 한 번 주문할 때마다 작성 가능(중복체크)</li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content m-2 border">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 p-4">
+                        <img src="images/shopping/review.png" class="card-img m-2 p-2" alt="...">
+                        <img src="images/shopping/productReview.png" class="card-img m-2 p-2" alt="...">
+                      </div>
+                      <div class="col-md-6 p-4">
+                        <ul>
+                          <li class="m-1">회원 리뷰 조회</li>
+                          <ul class="m-1">
+                            <li class="m-1">전체 리뷰 내역 조회</li>
+                            <li class="m-1">주문 내역에서 리뷰 작성/조회 버튼</li>
+                          </ul>
+                        </ul>
+                        <ul>
+                          <li class="m-1">제품별 리뷰 조회</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
 
                 </div>
               </div>
